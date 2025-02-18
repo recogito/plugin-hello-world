@@ -19,7 +19,7 @@ Make sure you have the following installed:
 
 ![Recogito Studio plugin test page](screenshot.png)
 
-Note that this plugin was created following the steps in the [Recogito Studio SDK documentation](https://github.com/recogito/recogito-studio-sdk). 
+> Note that this plugin was created following steps 1 - 7 of the [Recogito Studio SDK documentation](https://github.com/recogito/recogito-studio-sdk). 
 
 ## What Next?
 
