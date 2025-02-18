@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { ExtensionRegistry, ExtensionMount } from '../plugins';
 
-const extensions = ExtensionRegistry.getComponentsForExtensionPoint('*');
+const extensions = ExtensionRegistry.listExtensions();
 ---
 
 <Layout>
@@ -13,11 +13,34 @@ const extensions = ExtensionRegistry.getComponentsForExtensionPoint('*');
     <ul>
       {extensions.map(e => ( 
         <li>
-          <ExtensionMount 
-            client:only="react"
-            extension={e} />
+          <h3>{e.module_name}/{e.name}</h3>
+          <p>Extends: {e.extension_point}</p>
+          <div class="extension-container">
+            <ExtensionMount 
+              client:only="react"
+              extension={e} />
+          </div>
         </li>
       ))}
     </ul>
   </main> 
 </Layout>
+
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.25rem;
+  }
+
+  li {
+    max-width: 600px;
+  }
+
+  .extension-container {
+    border: 1px solid #c2c2c2;
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+  }
+</style>

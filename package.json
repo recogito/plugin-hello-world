@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "dev": "npm start --prefix .dev/",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "cd .dev && rm -rf node_modules && npm install --verbose"
   },
   "exports": {
     ".": "./dist/index.js",

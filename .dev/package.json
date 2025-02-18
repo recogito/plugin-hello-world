@@ -16,6 +16,6 @@
     "@types/react-dom": "^19.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@recogito/plugin-hello-world": "../"
+    "@recogito/plugin-hello-world": "file:../package.json"
   }
 }
