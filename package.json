@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "npm start --prefix .dev/",
     "build": "tsc",
-    "postinstall": "cd .dev && rm -rf node_modules && npm install --verbose"
+    "postinstall": "cd .dev && npm install --ignore-scripts"
   },
   "exports": {
     ".": "./dist/index.js",
