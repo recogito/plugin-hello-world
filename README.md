@@ -14,7 +14,7 @@ Make sure you have the following installed:
 1. Clone this repository.
 2. Run `npm install` to install dependencies.
 3. Run `npm run build` to build the plugin.
-4. Run `npm run dev` to preview the built plugin in the test Astro app.
+4. Run `npm run dev` to preview the built plugin in the Recogito Test application.
 5. Point your browser to <http://localhost:4321/>. You should see the plugin test page:
 
 ![Recogito Studio plugin test page](screenshot.png)
