@@ -6,14 +6,18 @@ const extensions = ExtensionRegistry.getComponentsForExtensionPoint('*');
 ---
 
 <Layout>
-  <h1>Extensions</h1>
+  <h1>Recogito Extensions Test Page</h1>
 
   <main>
-    {extensions.map(e => ( 
-      <ExtensionMount 
-        client:only="react"
-        extension={e} 
-        projectId="1cb15deb-e9c9-44e8-acbf-e30423d58e9e" />
-    ))}
+    <h2>Registered Extensions: {extensions.length}</h2>
+    <ul>
+      {extensions.map(e => ( 
+        <li>
+          <ExtensionMount 
+            client:only="react"
+            extension={e} />
+        </li>
+      ))}
+    </ul>
   </main> 
 </Layout>

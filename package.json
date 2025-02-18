@@ -9,12 +9,11 @@
   ],
   "scripts": {
     "dev": "npm start --prefix .dev/",
-    "build": "tsc && npm run copy-css",
-    "copy-css": "copyfiles -u 1 \"src/extensions/**/*.css\" dist"
+    "build": "tsc"
   },
   "exports": {
     ".": "./dist/index.js",
-    "./HelloWorldMessage": "./dist/extensions/HelloWorldMessage/index.js"
+    "./HelloWorldMessage": "./dist/extensions/HelloWorldMessage.js"
   },
   "devDependencies": {
     "@types/node": "^22.12.0",

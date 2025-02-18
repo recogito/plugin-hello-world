@@ -1,4 +1,4 @@
-export const HelloWorldExtension = () => {
+export const HelloWorldMessage = () => {
 
   return (
     <div>Hello World</div>
