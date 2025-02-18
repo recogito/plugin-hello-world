@@ -1,4 +1,4 @@
-# plugin-hello-world
+# Recogito Studio 'Hello World' Plugin
 
 A 'Hello World' Recogito Studio plugin. This project will introduce you to the basics of building your own plugins for the [Recogito Studio Client](https://github.com/recogito/recogito-client).
 
