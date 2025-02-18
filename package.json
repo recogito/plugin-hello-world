@@ -1,0 +1,31 @@
+{
+  "name": "@recogito/plugin-hello-world",
+  "version": "0.1.0",
+  "description": "A Recogito Studio 'Hello World' plugin",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "npm start --prefix .dev/",
+    "build": "tsc && npm run copy-css",
+    "copy-css": "copyfiles -u 1 \"src/extensions/**/*.css\" dist"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./HelloWorldMessage": "./dist/extensions/HelloWorldMessage/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "astro": "^5.1.10",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@recogito/studio-sdk": "^0.1.0"
+  }
+}
