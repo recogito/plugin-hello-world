@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ExtensionRegistry, ExtensionMount } from '../plugins';
+
+const extensions = ExtensionRegistry.getComponentsForExtensionPoint('*');
+---
+
+<Layout>
+  <h1>Extensions</h1>
+
+  <main>
+    {extensions.map(e => ( 
+      <ExtensionMount 
+        client:only="react"
+        extension={e} 
+        projectId="1cb15deb-e9c9-44e8-acbf-e30423d58e9e" />
+    ))}
+  </main> 
+</Layout>
