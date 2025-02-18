@@ -21,7 +21,7 @@ Make sure you have the following installed:
 
 > Note that this plugin was created following steps 1 - 7 of the [Recogito Studio SDK documentation](https://github.com/recogito/recogito-studio-sdk). 
 
-## What Next?
+## What's Next?
 
 Use this project as a starting point for creating your own Recogito Studio plugins.
 
